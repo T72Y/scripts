@@ -1,0 +1,23 @@
+-- idfk
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Whitelist";
+    Text = "Checking For User";
+    Icon = "rbxassetid://0";
+    Duration = 1.9
+    })
+wait(1.9)
+local Player = game:GetService("Players").LocalPlayer
+local WhitelistedIds = {
+   USERIDGOESHERE, 
+}
+
+if table.find(WhitelistedIds, Player.UserId) then
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Update!";
+    Text = "You have been whitelisted.";
+    Icon = "rbxassetid://0";
+    Duration = 2
+    })
+else
+    Player:Kick("Access Denied!")
+end
