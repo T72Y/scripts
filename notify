@@ -1,6 +1,0 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "";
-    Text = "";
-    Icon = "rbxassetid://0";
-    Duration = 
-    })
